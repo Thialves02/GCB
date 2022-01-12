@@ -23,7 +23,7 @@
     font-size:20px;
     color: var(--subtitle-color);
     margin: 10px 0;
-    width:400px
+    width:475px;
 }
 
 @media only screen and (max-width: 1150px){
@@ -36,5 +36,11 @@
         justify-content:center;
         align-items: center;
         width:100%
+    }
+    .servicos-infos h1{
+        text-align: center;
+    }
+    .servicos-infos p{
+        width: 80%;
     }
 }

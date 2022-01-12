@@ -9,7 +9,7 @@ import img4 from '../../assets/images/comida_4.svg'
 export default function Recipes() {
     return (
         <div className="container-recipes">
-            <div className='recipes-title'>
+            <div className='title-subtitle'>
                 <h1>Our Best Recipes</h1>
                 <p>Far far away, behind the word mountains, far from the countries <br/> Vokalia and Consonantia, there live the blind texts</p>
             </div>
