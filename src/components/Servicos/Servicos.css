@@ -1,0 +1,40 @@
+.servicos-container{
+    display: flex;
+    padding: 40px 0;
+}
+
+.servicos-container img{
+    width:50%
+}
+
+.servicos-infos{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width:60%
+}
+
+.servicos-infos h1{
+    color: var(--title-color);
+    font-size:40px
+}
+
+.servicos-infos p{
+    font-size:20px;
+    color: var(--subtitle-color);
+    margin: 10px 0;
+    width:400px
+}
+
+@media only screen and (max-width: 1150px){
+    .servicos-container img{
+        display: none;
+    }
+    .servicos-infos{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width:100%
+    }
+}
