@@ -1,0 +1,7 @@
+.register-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    background-image: linear-gradient(to right top, #dae0e9, #a9e4f9, #6cebe4, #76e9a4, #badc50);
+}
