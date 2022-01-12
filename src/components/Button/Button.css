@@ -1,0 +1,8 @@
+.container-button button{
+    background-color: var(--green);
+    border: none;
+    color: white;
+    border-radius:5px;
+    padding:13px;
+    cursor: pointer;
+}
