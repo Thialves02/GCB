@@ -1,4 +1,7 @@
+import Blog from '../components/Blog/Blog';
+import Footer from '../components/Footer/Footer';
 import Introducao from '../components/Introducao/Introducao';
+import Membership from '../components/Membership/Membership';
 import Navbar from '../components/Navbar/Navbar';
 import Recipes from '../components/Recipes/Recipes';
 import Servicos from '../components/Servicos/Servicos';
@@ -11,6 +14,9 @@ function App() {
     <Introducao/>
     <Recipes/>
     <Servicos/>
+    <Blog/>
+    <Membership/>
+    <Footer/>
     </>
   );
 }
