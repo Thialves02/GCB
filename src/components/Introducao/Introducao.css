@@ -1,0 +1,77 @@
+.intro-container{
+    display: flex;
+    justify-content: space-between;
+}
+.intro-container .intro-infos{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.intro-container .intro-infos h1{
+    color: var(--title-color);
+    margin-top:50px;
+    font-size:4rem
+}
+.intro-container img{
+    right:0;
+    top: 0;
+    width: 60%;
+}
+
+.intro-container .intro-infos .intro-inputs{
+    margin-top:25px;
+}
+
+.intro-container .intro-infos input{
+    background-color: transparent;
+    padding:10px;
+    border-radius:5px;
+    border: 1px solid var(--title-color);
+    width:225px;
+    height:25px;
+    color: rgb(200, 200, 200);
+    font-size:16px;
+    
+    outline: none;
+}
+
+.intro-container .intro-infos button{
+    color: white;
+    margin-left: 25px;
+    padding:15px;
+    border: none;
+    border-radius: 5px;
+    background-color:var(--green);
+    font-size:15px;
+    cursor: pointer;
+    transition: all 0.5s
+}
+
+.intro-container .intro-infos button:hover{
+    background-color:rgb(110, 197, 76);
+}
+
+@media only screen and (max-width: 1150px){
+    .intro-container{
+        justify-content:center;
+    }
+    .intro-container h1{
+        text-align: center;
+    }
+    .intro-container .intro-infos{
+        justify-content:center;
+        margin-left: 0;
+    }
+    .intro-container .intro-infos .intro-inputs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro-container img{
+        display: none;
+    }
+    
+    .intro-container .intro-infos h1{
+        font-size:55px
+    }
+}
