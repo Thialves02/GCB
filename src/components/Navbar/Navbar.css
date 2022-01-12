@@ -6,9 +6,19 @@
     width: 100%;
     transition: all .5s;
 }
-.navbar-container h1{
+
+.navbar-container a, 
+.navbar-container-open a{
+    text-decoration: none;
+}
+.navbar-container a {
     margin-left: 10%;
 }
+
+.navbar-container ul a{
+    margin-left: 0;
+}
+
 .navbar-container-open{
     background-color: var(--green);
 }
