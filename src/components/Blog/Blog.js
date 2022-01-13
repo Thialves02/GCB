@@ -13,28 +13,77 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowAltRight, faLongArrowAltLeft } from "@fortawesome/free-solid-svg-icons";
 
 export default function Blog() {
-    
+    const blogCards = [
+        {
+            image:img1,
+            title:'Quick-start guide to nuts and seeds',
+            profile:profile1,
+            name:'Kevin Ibrahim'
+        },
+        {
+            image:img2,
+            title:'Nutrition: Tips for Improving Your Health',
+            profile:profile2,
+            name:'Mike Jackson'
+        },
+        {
+            image:img3,
+            title:'The top 10 benefits of eating healthy',
+            profile:profile3,
+            name:'Bryan McGregor'
+        },
+        {
+            image:img4,
+            title:'Quick-start guide to nuts and seeds',
+            profile:profile4,
+            name:'Julian Augusto'
+        },
+        {
+            image:img1,
+            title:'Quick-start guide to nuts and seeds',
+            profile:profile1,
+            name:'Kevin Ibrahim'
+        },
+        {
+            image:img2,
+            title:'Nutrition: Tips for Improving Your Health',
+            profile:profile2,
+            name:'Mike Jackson'
+        },
+        {
+            image:img3,
+            title:'The top 10 benefits of eating healthy',
+            profile:profile3,
+            name:'Bryan McGregor'
+        },
+    ]
     const[scrollX,setScrollX] = useState(0)
 
+    const length = blogCards.length * 250
+
+    console.log(scrollX)
+
     const scrollRight= () =>{
-        var newScrollX = scrollX - 400
+        var newScrollX = scrollX - 350
         setScrollX(newScrollX)
         console.log(scrollX)
     }
 
     const scrollLeft= () =>{
-        var newScrollX = scrollX + 400
+        var newScrollX = scrollX + 350
         setScrollX(newScrollX)
         console.log(scrollX)
     }
-    console.log(scrollX)
+    
+
+    
     return (
         <div className='blog-container'>
             <div className='title-subtitle'>
                 <h1>Read Our Blog</h1>
                 <p>Far far away, behind the word mountains, far from the countries <br/> Vokalia and Consonantia, there live the blind texts</p>
             </div>
-            {scrollX >= -400 &&
+            {scrollX >= -length &&
                 <div className='blog-icon-right' onClick={scrollRight}>
                     <FontAwesomeIcon icon={faLongArrowAltRight} />
                 </div>
@@ -42,44 +91,15 @@ export default function Blog() {
             
             <div className='container-cards'>
                 <div className='carrousel-cards' style={{marginLeft:scrollX}}>
-                <BlogCard
-                image={img1}
-                title='Quick-start guide to nuts and seeds'
-                profile={profile1}
-                name='Kevin Ibrahim'
-                />
-                <BlogCard
-                image={img2}
-                title='Nutrition: Tips for
-                Improving Your Health'
-                profile={profile2}
-                name='Mike Jackson'
-                />
-                <BlogCard
-                image={img3}
-                title='The top 10 benefits
-                of eating healthy'
-                profile={profile3}
-                name='Bryan McGregor'
-                />
-                <BlogCard
-                image={img4}
-                title='Quick-start guide to nuts and seeds'
-                profile={profile4}
-                name='Julian Augusto'
-                />
-                <BlogCard
-                image={img1}
-                title='Quick-start guide to nuts and seeds'
-                profile={profile1}
-                name='Kevin Ibrahim'
-                />
-                <BlogCard
-                image={img1}
-                title='Quick-start guide to nuts and seeds'
-                profile={profile2}
-                name='Mike Jackson'
-                />
+                {blogCards.map((card,index) =>(
+                    <BlogCard
+                    key={index}
+                    image={card.image}
+                    title={card.title}
+                    profile={card.profile}
+                    name={card.name}
+                    />
+                ))} 
                 <div className='gradient'></div>
                 </div>              
             </div>
