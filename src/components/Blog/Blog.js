@@ -61,22 +61,17 @@ export default function Blog() {
 
     const length = blogCards.length * 250
 
-    console.log(scrollX)
-
     const scrollRight= () =>{
         var newScrollX = scrollX - 350
         setScrollX(newScrollX)
-        console.log(scrollX)
     }
 
     const scrollLeft= () =>{
         var newScrollX = scrollX + 350
         setScrollX(newScrollX)
-        console.log(scrollX)
     }
     
-
-    
+ 
     return (
         <div className='blog-container'>
             <div className='title-subtitle'>
